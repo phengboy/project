@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pc.day_1listview">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Newpager.MyYJActivity" />
+        <activity android:name=".Newpager.LvxingActivity"/>
+        <activity android:name=".Newpager.LvxingMoneyActivity"/>
+        <activity android:name=".Newpager.MyDingdanActivity"/>
+        <activity android:name=".Newpager.MyJifengActivity"/>
+        <activity android:name=".Newpager.MyHongbaoActivity"/>
+        <activity android:name=".Newpager.MyMsegActivity"/>
+        <activity android:name=".Newpager.MyShoucangActivity"/>
+        <activity android:name=".Newpager.TuijianActivity"/>
+        <activity android:name=".hongbao.TiXianActivity"/>
+        <!--  友盟的appkey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55b98dac67e58e07a1005262" />
+    </application>
+
+</manifest>
